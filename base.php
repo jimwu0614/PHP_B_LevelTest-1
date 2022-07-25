@@ -154,7 +154,7 @@ class Str{
     public function __construct($table)
     {
         $this->table=$table;
-        switch($topable){
+        switch($table){
             case 'title':
                 $this->header="網站標題管理";
                 $this->tdHead=["網站標題","替代文字"];
