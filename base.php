@@ -4,7 +4,7 @@ session_start();
 
 class DB
 {
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=db15";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1110205";
     protected $user='root';
     protected $pw='';
     public $table;
@@ -235,15 +235,15 @@ function dd($array){
 }
 
 
-$Bot=new DB('bottom');
-$Total=new DB('total');
-$Title=new DB('title');
-$Ad=new DB('ad');
-$Image=new DB('image');
-$Mvim=new DB('mvim');
-$News=new DB('news');
-$Admin=new DB('admin');
-$Menu=new DB('menu');
+$Bot=new DB('b_quiz_1_bottom');
+$Total=new DB('b_quiz_1_total');
+$Title=new DB('b_quiz_1_title');
+$Ad=new DB('b_quiz_1_ad');
+$Image=new DB('b_quiz_1_image');
+$Mvim=new DB('b_quiz_1_mvim');
+$News=new DB('b_quiz_1_news');
+$Admin=new DB('b_quiz_1_admin');
+$Menu=new DB('b_quiz_1_menu');
 if(isset($do)){
     $Str=new Str($do);
 }
