@@ -13,7 +13,7 @@
                 </tr>
                 <?php 
                     
-                    $rows=$DB->all();
+                    $rows=$Title->all();
                     foreach($rows as $row){
                 ?>
                 <tr >

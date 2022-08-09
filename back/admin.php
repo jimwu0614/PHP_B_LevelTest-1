@@ -12,7 +12,7 @@
                 </tr>
                 <?php 
                     
-                    $rows=$DB->all();
+                    $rows=$Admin->all();
                     foreach($rows as $row){
                 ?>
                 <tr >

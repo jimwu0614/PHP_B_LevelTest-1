@@ -12,13 +12,13 @@
                 </tr>
                 <?php 
                     
-                    $all=$DB->math('count',"id");
+                    $all=$Image->math('count',"id");
                     $div=3;
                     $pages=ceil($all/$div);
                     $now=$_GET['p']??1;
                     $start=($now-1)*$div;
                     //select * from table limit 0,3   
-                    $rows=$DB->all(" limit $start,$div");
+                    $rows=$Image->all(" limit $start,$div");
                     foreach($rows as $row){
                 ?>
                 <tr >

@@ -4,7 +4,7 @@ session_start();
 
 class DB
 {
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1110205";
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=b_quiz_1";
     protected $user='root';
     protected $pw='';
     public $table;
@@ -35,7 +35,7 @@ class DB
         if(isset($arg[1])){
             $sql .= $arg[1];
         }
-         //echo $sql;
+        //  echo $sql;
 
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
@@ -56,7 +56,7 @@ class DB
                 $sql .= " WHERE `id` = '$id' ";
             }
 
-         //echo $sql;
+        //  echo $sql;
 
         return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
 
